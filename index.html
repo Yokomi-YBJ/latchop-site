@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LaTchop</title>
+<meta name="description" content="LaTchop, l'app qui livre les meilleurs plats locaux de Ngaoundéré, chauds et rapides. Téléchargez l'application.">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand"><img src="assets/icon.png" alt=""> LaTchop</a>
+    <div class="nav-links">
+      <a href="#comment-ca-marche">Comment ça marche</a>
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#avis">Avis</a>
+    </div>
+    <a href="#telecharger" class="nav-cta" data-download>Télécharger</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="smoke smoke-1">
+    <svg viewBox="0 0 100 160" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 160 C20 130, 70 110, 45 80 C25 55, 60 35, 48 0" stroke="#E8560B" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+  </div>
+  <div class="smoke smoke-2">
+    <svg viewBox="0 0 100 160" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 160 C75 125, 30 105, 55 75 C75 50, 40 30, 52 0" stroke="#FF6B1A" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot"></span> Ngaoundéré · Livraison active</span>
+      <h1>Le vrai goût,<br>livré <span class="accent">chaud<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M2 14 Q 50 2, 100 12 T 198 8" stroke="#FFB27A" stroke-width="10" fill="none" stroke-linecap="round"/></svg></span>.</h1>
+      <p class="lead">Koki, Okok, Eru… commandez les meilleurs plats faits maison à Ngaoundéré et recevez-les brûlants, en quelques minutes. LaTchop, c'est votre maquis dans la poche.</p>
+      <div class="hero-ctas">
+        <a href="#telecharger" class="btn btn-primary" data-download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0l-4-4m4 4l4-4"/><path d="M5 21h14"/></svg>
+          Télécharger l'app
+        </a>
+        <a href="#comment-ca-marche" class="btn btn-ghost">Voir comment ça marche</a>
+      </div>
+      <div class="trust-row">
+        <span class="stars">★★★★★</span>
+        <span>Déjà adopté par les gourmands de Ngaoundéré</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="float-card card-1">
+        <span class="ic">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </span>
+        <span>Commande envoyée<br><small>enregistrée à l'instant</small></span>
+      </div>
+      <div class="phone-frame phone-frame--photo">
+        <img src="assets/hero-mockup.jpg" alt="Application LaTchop affichée sur un smartphone, montrant l'écran d'accueil avec les plats du jour à Ngaoundéré">
+      </div>
+      <div class="float-card card-2">
+        <span class="ic">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </span>
+        <span>4 100 FCFA<br><small>commande en cours</small></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee">
+    <span>Koki</span><span>Eru</span><span>Poulet DG</span><span>Ndolé</span><span>Taro Sauce jaune</span><span>Livraison rapide</span>
+    <span>Koki</span><span>Eru</span><span>Poulet DG</span><span>Ndolé</span><span>Taro Sauce jaune</span><span>Livraison rapide</span>
+  </div>
+</div>
+
+<section class="steps-section" id="comment-ca-marche">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Le parcours</span>
+      <h2>De la faim à la première bouchée,<br>en trois étapes.</h2>
+      <p>Aucune complication. Aucun compte à créer sur dix écrans. Juste vous, votre téléphone, et le repas qui arrive.</p>
+    </div>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Créez votre compte</h3>
+        <p>Nom, quartier, numéro de téléphone. Moins de deux minutes, et LaTchop sait où vous trouver.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Choisissez vos plats</h3>
+        <p>Parcourez les plats et boissons du jour, ajoutez-les au panier, ajustez les quantités en un geste.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Recevez, chaud</h3>
+        <p>Livraison à domicile ou retrait sur place à Ngaoundéré. Vous suivez votre commande en temps réel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fonctionnalites">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Fonctionnalités</span>
+      <h2>Tout ce qu'il faut,<br>rien de superflu.</h2>
+      <p>Une app pensée pour Ngaoundéré : rapide sur petit réseau, claire à utiliser, honnête sur les prix.</p>
+    </div>
+
+    <div class="showcase-row">
+      <div class="showcase-text">
+        <span class="tag">Menu du jour</span>
+        <h3>Voyez exactement ce qui est disponible aujourd'hui.</h3>
+        <p>Pas de surprise ni de plat "épuisé" après la commande. LaTchop affiche les plats réellement préparés du jour, avec prix clair et description honnête.</p>
+        <ul class="feature-list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Plats et boissons filtrables en un tap</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Prix affiché en FCFA, sans frais cachés</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Stock du jour mis à jour en temps réel</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="blob"></div>
+        <div class="mini-phone"><img src="assets/shot-home.jpg" alt="Liste des plats disponibles dans l'application LaTchop"></div>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse">
+      <div class="showcase-text">
+        <span class="tag">Panier intelligent</span>
+        <h3>Ajustez, comparez, validez en quelques secondes.</h3>
+        <p>Le panier calcule votre sous-total en direct et vous laisse choisir : livraison à domicile avec supplément affiché, ou retrait sur place gratuit.</p>
+        <ul class="feature-list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Quantités modifiables sans recharger la page</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Choix clair : livraison ou retrait</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Total à payer toujours visible</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="blob"></div>
+        <div class="mini-phone"><img src="assets/shot-cart.jpg" alt="Panier de commande dans l'application LaTchop avec le total à payer"></div>
+      </div>
+    </div>
+
+    <div class="showcase-row">
+      <div class="showcase-text">
+        <span class="tag">Suivi des commandes</span>
+        <h3>Suivez votre commande, sans avoir à demander.</h3>
+        <p>En attente, en cours, livrée : chaque commande affiche son statut réel. Vous savez toujours où en est votre repas.</p>
+        <ul class="feature-list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Statut mis à jour en temps réel</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Historique complet de vos commandes</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Détail des plats et montant à chaque étape</li>
+        </ul>
+      </div>
+      <div class="showcase-visual">
+        <div class="blob"></div>
+        <div class="mini-phone"><img src="assets/shot-orders.jpg" alt="Écran de suivi des commandes dans l'application LaTchop"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">&lt;2min</div>
+        <div class="stat-label">pour créer un compte</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">plats faits maison</div>
+      </div>
+      <div>
+        <div class="stat-num">0 F</div>
+        <div class="stat-label">frais caché sur le retrait</div>
+      </div>
+      <div>
+        <div class="stat-num">Ngaoundéré</div>
+        <div class="stat-label">livraison active</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="avis">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Ils ont testé</span>
+      <h2>Ce que ça change,<br>au quotidien.</h2>
+    </div>
+    <div class="showcase-row" style="align-items:center;">
+      <div class="showcase-text">
+        <p style="font-family:var(--font-hand); font-size:2rem; color:var(--char); line-height:1.3; margin-bottom:22px;">
+          "Le Koki était encore chaud à l'arrivée. J'ai commandé depuis le magasin et j'ai reçu la confirmation en quelques secondes."
+        </p>
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:var(--peach);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;color:var(--orange-deep);">HB</div>
+          <div>
+            <strong style="display:block;">Hamadou Boubakar</strong>
+            <span style="color:var(--ink-soft); font-size:0.9rem;">Commerçant à Bini-Dang, Ngaoundéré</span>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-visual">
+        <div class="blob" style="background:var(--green); opacity:0.2;"></div>
+        <div class="mini-phone"><img src="assets/shot-confirm.jpg" alt="Confirmation de commande envoyée dans l'application LaTchop"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="telecharger">
+  <div class="container">
+    <h2>Votre prochain <span class="accent">tchop</span><br>commence ici.</h2>
+    <p>L'application n'est pas encore sur les stores — vous pouvez déjà la télécharger directement, en avant-première.</p>
+    <a href="#" class="btn btn-primary" data-download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0l-4-4m4 4l4-4"/><path d="M5 21h14"/></svg>
+      Télécharger LaTchop (APK)
+    </a>
+    <div class="final-note">Compatible Android · Version bêta ouverte</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><img src="assets/icon.png" alt=""> LaTchop</a>
+        <p>Local, rapide, délicieux. LaTchop connecte les gourmands de Ngaoundéré aux meilleurs plats faits maison, livrés chauds.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Application</h4>
+          <a href="#comment-ca-marche">Comment ça marche</a>
+          <a href="#fonctionnalites">Fonctionnalités</a>
+          <a href="#telecharger" data-download>Télécharger</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#" id="whatsapp-link" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.6 6.32A8.86 8.86 0 0012.05 4a8.9 8.9 0 00-7.71 13.34L3 21l3.79-1.3A8.9 8.9 0 0012.06 21a8.9 8.9 0 006.29-15.19 8.85 8.85 0 00-.75-.49zM12.06 19.4a7.4 7.4 0 01-3.77-1.03l-.27-.16-2.8.96.94-2.72-.18-.28a7.4 7.4 0 1113.65-3.93 7.4 7.4 0 01-7.57 7.16zm4.06-5.54c-.22-.11-1.3-.64-1.5-.71-.2-.08-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.15-.26.16-.48.05-.22-.1-.93-.34-1.77-1.09-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.11-.46.11-.11.25-.28.37-.43.13-.15.17-.25.25-.42.08-.16.04-.3-.04-.42-.08-.11-.5-1.2-.68-1.65-.18-.44-.37-.38-.5-.39-.13 0-.28-.01-.43-.01-.15 0-.4.06-.61.28-.21.22-.8.78-.8 1.9s.82 2.2.94 2.35c.11.15 1.55 2.37 3.78 3.23 2.23.86 2.23.58 2.63.54.4-.04 1.3-.53 1.48-1.05.18-.51.18-.94.13-1.05-.06-.1-.22-.16-.44-.27z"/></svg>
+            <span id="whatsapp-label">Discuter sur WhatsApp</span>
+          </a>
+          <a href="#top">Ngaoundéré, Cameroun</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LaTchop. Tous droits réservés.</span>
+      <a href="#" style="display:inline-flex; align-items:center; gap:7px; color:rgba(255,248,240,0.4); transition:color .2s;" onmouseover="this.style.color='var(--orange)'" onmouseout="this.style.color='rgba(255,248,240,0.4)'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 00-2-2H6a2 2 0 00-2 2v9m16 0H4m16 0l1.28 2.55a1 1 0 01-.9 1.45H3.62a1 1 0 01-.9-1.45L4 16"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></svg>
+        Réalisé par : YBJ
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">
+  <span class="dot-live"></span>
+  <span>Le téléchargement direct arrive très bientôt. Revenez vite !</span>
+</div>
+
+<script>
+// Nav background on scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+// Lien WhatsApp : le numéro n'est jamais écrit en clair dans le code source,
+// il est reconstruit ici à partir de fragments encodés puis assemblé au clic.
+(function initWhatsApp(){
+  const parts = ['MjM3', 'Njk2', 'MjU0', 'NDEx']; // fragments base64 de l'indicatif + numéro
+  const phone = parts.map(p => atob(p)).join('');
+  const message = "Bonjour, je viens du site LaTchop et j'aimerais avoir plus d'informations.";
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const link = document.getElementById('whatsapp-link');
+  if (link) link.setAttribute('href', url);
+})();
+
+// Download links: currently empty by design -> show toast instead of navigating
+const toast = document.getElementById('toast');
+let toastTimer;
+document.querySelectorAll('[data-download]').forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 3800);
+  });
+});
+
+// Scroll-reveal for showcase rows and step cards
+const revealTargets = document.querySelectorAll('.showcase-row, .step-card, .stat-num');
+revealTargets.forEach(el => { el.style.opacity = 0; el.style.transform = 'translateY(24px)'; el.style.transition = 'opacity .7s ease, transform .7s ease'; });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = 'translateY(0)';
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+revealTargets.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
