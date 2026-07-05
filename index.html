@@ -21,7 +21,7 @@
       <a href="#fonctionnalites">Fonctionnalités</a>
       <a href="#avis">Avis</a>
     </div>
-    <a href="#telecharger" class="nav-cta" data-download>Télécharger</a>
+    <a href="latchop-beta.apk" class="nav-cta" download>Télécharger</a>
   </div>
 </nav>
 
@@ -43,7 +43,7 @@
       <h1>Le vrai goût,<br>livré <span class="accent">chaud<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M2 14 Q 50 2, 100 12 T 198 8" stroke="#FFB27A" stroke-width="10" fill="none" stroke-linecap="round"/></svg></span>.</h1>
       <p class="lead">Koki, Okok, Eru… commandez les meilleurs plats faits maison à Ngaoundéré et recevez-les brûlants, en quelques minutes. LaTchop, c'est votre maquis dans la poche.</p>
       <div class="hero-ctas">
-        <a href="#telecharger" class="btn btn-primary" data-download>
+        <a href="latchop-beta.apk" class="btn btn-primary" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0l-4-4m4 4l4-4"/><path d="M5 21h14"/></svg>
           Télécharger l'app
         </a>
@@ -223,8 +223,8 @@
 <section class="final-cta" id="telecharger">
   <div class="container">
     <h2>Votre prochain <span class="accent">tchop</span><br>commence ici.</h2>
-    <p>L'application n'est pas encore sur les stores — vous pouvez déjà la télécharger directement, en avant-première.</p>
-    <a href="#" class="btn btn-primary" data-download>
+    <p>L'application n'est pas encore sur les stores — téléchargez-la directement dès maintenant, en avant-première.</p>
+    <a href="latchop-beta.apk" class="btn btn-primary" download>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13m0 0l-4-4m4 4l4-4"/><path d="M5 21h14"/></svg>
       Télécharger LaTchop (APK)
     </a>
@@ -244,7 +244,7 @@
           <h4>Application</h4>
           <a href="#comment-ca-marche">Comment ça marche</a>
           <a href="#fonctionnalites">Fonctionnalités</a>
-          <a href="#telecharger" data-download>Télécharger</a>
+          <a href="latchop-beta.apk" download>Télécharger</a>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
@@ -266,11 +266,6 @@
   </div>
 </footer>
 
-<div class="toast" id="toast">
-  <span class="dot-live"></span>
-  <span>Le téléchargement direct arrive très bientôt. Revenez vite !</span>
-</div>
-
 <script>
 // Nav background on scroll
 const nav = document.getElementById('nav');
@@ -288,18 +283,6 @@ window.addEventListener('scroll', () => {
   const link = document.getElementById('whatsapp-link');
   if (link) link.setAttribute('href', url);
 })();
-
-// Download links: currently empty by design -> show toast instead of navigating
-const toast = document.getElementById('toast');
-let toastTimer;
-document.querySelectorAll('[data-download]').forEach(el => {
-  el.addEventListener('click', (e) => {
-    e.preventDefault();
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 3800);
-  });
-});
 
 // Scroll-reveal for showcase rows and step cards
 const revealTargets = document.querySelectorAll('.showcase-row, .step-card, .stat-num');
