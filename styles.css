@@ -1,3 +1,4 @@
+
 /* ============ TOKENS ============ */
 :root{
   --orange: #FF6B1A;
@@ -629,8 +630,11 @@ footer{
   .showcase-row, .showcase-row.reverse{ grid-template-columns:1fr; text-align:center; }
   .showcase-row .showcase-visual, .showcase-row.reverse .showcase-visual{ order:1; }
   .showcase-row .showcase-text, .showcase-row.reverse .showcase-text{ order:2; }
-  .feature-list{ align-items:center; }
+  
+  /* C'est ICI que l'alignement des puces a été corrigé pour les écrans mobiles */
+  .feature-list{ width: fit-content; margin: 0 auto; align-items: flex-start; }
   .feature-list li{ text-align:left; }
+  
   .stats-grid{ grid-template-columns:repeat(2,1fr); gap:36px; }
   .footer-top{ flex-direction:column; }
   .footer-cols{ gap:40px; }

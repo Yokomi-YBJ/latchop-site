@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Crawlers IA explicitement autorisés (référencement dans les réponses des assistants)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://latchop.onrender.com/sitemap.xml
